@@ -1,0 +1,140 @@
+#strings
+
+print("Atharv is my name.","My age is 20.")
+print("My name is Atharv.","I am 20 years old.")
+
+print("My name is Atharv.\n We are in Google.")
+
+
+print("My name is Atharv.\t We are in Google.")
+
+#basic operation in strings
+
+s1="Hello"
+print(type(s1))
+
+s2='123'
+print(type(s2))
+
+s3="3.14"
+print(type(s3))
+
+#concatenation
+str1="Atharv"
+str2="patil"
+str_final=str1+str2
+print(str_final)
+
+str_final2=str1+" "+str2
+print(str_final2)
+
+#length of string
+print(len(str1))
+print(len(str2))
+print(len(str_final))
+print(len(str_final2))
+
+#Indexing
+text="apna_college"
+ch=text[0]
+print(ch)
+
+text="apna_college" 
+print(text[5])
+
+#slicing
+str="apna college"
+print(len(str))
+
+print(str[0:4])
+print(str[ :4])
+print(str[5:12])
+print(str[5: ])
+print(str[5:len(str)])
+
+print(str[1:4])
+
+str="Atharv"
+print(len(str))
+print(str[0:7])
+print(str[0: ])
+print(str[0:len(str)])
+
+
+str="myself Atharv"
+print(str.find("patil"))
+
+str="I am from apnacollege"
+print(str.count("a"))
+
+str="how do you do"
+print(str.count("do"))
+
+str="PYTHON"
+print(str.lower( ))
+
+str="I am from apnacollege"
+print(str.lower())
+print(str.upper())
+print(str.strip( ))
+
+#conditional statements:(if,elif and else)
+
+#Project 1:
+# Step 1: Register
+real_username = "Atharv"
+real_password = "Secret123"
+
+# Step 2: Input from user
+username = input("Enter your username: ").strip().lower()
+password = input("Enter your password: ").strip()
+
+# Step 3: Check username
+if username == real_username.lower():
+    
+    # Step 4: Check password
+    if len(password) < 6:
+        print("❌ Password too short!")
+    
+    elif "password" in password.lower():
+        print("❌ Weak password: cannot contain the word 'password'.")
+
+    elif password == real_password:
+        print("✅ Login successful!")
+        print("🔒 Your password length was", len(password), "characters.")
+        print("🔑 Password masked as:", "*" * len(password))
+    
+    else:
+        print("❌ Wrong password.")
+else:
+    print("❌ Username not found.")
+    
+    
+#project 2:    
+# A fixed number to guess
+secret_number = 9
+
+# Ask user to guess
+guess = int(input("Guess the number (between 1 to 10): "))
+
+# Check the guess
+if guess == secret_number:
+    print("🥳 Correct! You guessed it right.")
+elif guess > secret_number:
+    print("Too high! Try a smaller number.")
+else:
+    print("Too low! Try a bigger number.")
+
+
+
+#nesting(if under if condition)
+age=int(input("enter age"))
+if age >= 18:
+    if age >= 80:
+        print("cannot drive")
+        
+    else:
+        print("can drive")
+        
+else:
+    print("cannot drive")
