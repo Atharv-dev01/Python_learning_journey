@@ -1,0 +1,146 @@
+#lists
+marks=[94.4, 87.5, 95.2, 66.4, 45.1]
+print(marks)
+print(type(marks))
+
+#list operation
+#1 assessing list
+
+student=["Atharv", "Omkar", "Rohit"]
+print(student[0])
+print(student[1])
+print(student[2])
+print(len(student))
+
+#2 lists are mutable
+
+mix_list=["karan", 96.8, 17 , "delhi"]
+mix_list[3]='google'
+mix_list[1]="98"
+print(mix_list)
+
+#3  list slicing
+marks=[10,20,30,40,50]
+#slice from index 1 to index 4
+print(marks[1:4])
+
+marks =[87,64,33,95]
+
+print(marks[1:3])
+print(marks[ :4])
+print(marks[0:4])
+print(marks[1: ])
+print(marks[1:len(marks)])
+print(marks[-3:-1])
+
+#4 append        #alphabets(specially) ,                                           characters,elements within lists                             are printed with quotes.
+
+alphabets=[ 'f','d','e','a','b']
+print(alphabets.append('x'))
+print(alphabets)
+
+x=[1,2,3]
+x.append([4,5])  #append adds value at end of           list.Here [4,5] is a single element only not            seperate as they are enclosed within                   same square braces.
+print(x)
+print(len(x))  #gives output as 4 bcoz of above reason.
+
+a=[1,2,3]
+a.extend([4,5])   #extend adds value at end of           list. Here [4,5] is a treated as two different              element only as they are                                        functionized with extend and not append.
+print(a)
+print(len(a))  #gives output as 5 bcoz of above reason.
+
+
+my_list=['1' ,'2' ,'3']
+my_list.append('4')
+my_list.remove('2')
+print(my_list)
+
+#5 sort and sort reverse=True
+devices=["remote","desktop","macbook","windows"]
+devices.sort( )
+print(devices)
+
+devices.sort(reverse=True)
+print(devices)
+
+#6 reverse
+program=["python","java","mdango","reactjs"]
+program.reverse( )
+print(program)
+
+#7 insert(idx,el)
+web=["HTML","CSS", "frontend","backend","dbms"]
+web.insert(4,'fullstack')
+print(web)
+
+#8 remove
+python=['variables','datatypes','strings']
+python.remove('strings')
+print(python)
+
+#9 pop(idx)
+table=[5,10,15,20,25,29,30,35]
+table.pop(5)
+table.insert(8,40)
+table.insert(9,45)
+table.insert(10,50)
+print(table)
+
+#wap to input name of 3 movies and create a list from it.
+movies=[ ]
+movies.append(input("1st movie"))
+movies.append(input("2nd movie"))
+movies.append(input("3rd movie"))
+print(movies)
+
+
+#tuples
+my_tuple = (10, 20, 30, 40, 50, 60)
+
+# Slice from index 1 to 4 (20 to 50, excluding index 5)
+print(my_tuple[1:5])      
+
+# Slice from start to index 3
+print(my_tuple[:4])      
+
+# Slice from index 2 to end
+print(my_tuple[2:])       
+
+# Slice with step
+print(my_tuple[::2])     
+
+# Slice in reverse
+print(my_tuple[::-1])    
+
+#slice from index -6 to end
+print(my_tuple[-6:])
+
+#slice from start to index -1
+print(my_tuple[:-1])
+
+#slice from start to end with a step(start:stop:step)
+
+print(my_tuple[0:5:2])
+print(my_tuple[0:6:2])
+
+#tuple methods
+tup = (2,1,3,1)
+#tup.index(element)
+print(tup.index(2))
+print(tup.index(1))
+print(tup.index(3))
+
+#tup.count(element)
+print(tup.count(2))
+print(tup.count(1))
+print(tup.count(3))
+
+#tuple operations
+#concatenation
+a=(1,2)
+b=(3,4)
+print(a+b)
+
+#Repeat
+print(a*4)
+print(b*3)
